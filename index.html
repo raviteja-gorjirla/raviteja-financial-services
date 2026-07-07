@@ -1,606 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raviteja Financial Services — Tax, GST &amp; Payroll, Made Easy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg: #FFF9F1;
-    --bg-alt: #FFEFE0;
-    --ink: #2D2A26;
-    --ink-soft: #6B6259;
-    --line: #F2E3D0;
-    --coral: #FF6B4A;
-    --coral-deep: #E8532F;
-    --teal: #0E7C7B;
-    --teal-deep: #0A5F5E;
-    --yellow: #FFC857;
-    --white: #FFFFFF;
+📞 Call us now at +91 93913 08157 — free first consultation for new clients
+Raviteja Financial
 
-    --display: 'Baloo 2', sans-serif;
-    --body: 'Inter', sans-serif;
-  }
+Trusted by businesses across Hyderabad
+Taxes, GST & payroll — sorted, stress-free.
 
-  *{ margin:0; padding:0; box-sizing:border-box; }
-  html{ scroll-behavior:smooth; }
+Raviteja Financial Services takes the paperwork off your plate — ITR, GST, TDS, payroll, and more — so you can focus on running your business.
+Get Free Consultation →
+💬 Chat on WhatsApp 100% on-time filings 8 services under one roof Replies within hours
+This month's filing status
 
-  body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--body);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
+GST Return — Filed early
 
-  a{ color:inherit; text-decoration:none; }
-  img{ max-width:100%; display:block; }
+TDS Return — On track
 
-  .wrap{ max-width:1120px; margin:0 auto; padding:0 32px; }
+Payroll Run — Completed
 
-  /* ---------- Badge ---------- */
-  .badge{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:0.01em;
-    color:var(--teal-deep);
-    background:#E4F5F1;
-    padding:7px 16px;
-    border-radius:100px;
-  }
-  .badge::before{ content:'✓'; font-weight:700; }
+PF/ESI Filing — Scheduled
 
-  /* ---------- Top bar ---------- */
-  .topbar{
-    background:var(--teal-deep);
-    color:#fff;
-    font-size:13.5px;
-    text-align:center;
-    padding:9px 16px;
-    font-weight:500;
-  }
-  .topbar a{ text-decoration:underline; font-weight:600; }
+Everything your business needs
 
-  /* ---------- Header ---------- */
-  header{
-    position:sticky;
-    top:0;
-    background:rgba(255,249,241,0.95);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-    z-index:100;
-  }
-  .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 32px;
-    max-width:1120px;
-    margin:0 auto;
-  }
-  .logo{ font-family:var(--display); font-size:22px; font-weight:700; color:var(--ink); }
-  .logo span{ color:var(--coral); }
-  .nav-links{ display:flex; align-items:center; gap:32px; font-size:14.5px; font-weight:600; color:var(--ink-soft); }
-  .nav-links a:hover{ color:var(--ink); }
-  .nav-phone{
-    color:var(--teal-deep) !important;
-  }
-  .nav-cta{
-    background:var(--coral);
-    color:var(--white) !important;
-    padding:11px 22px;
-    border-radius:100px;
-    font-size:14.5px;
-    font-weight:700;
-    box-shadow:0 4px 14px rgba(255,107,74,0.35);
-  }
-  .nav-cta:hover{ background:var(--coral-deep); }
-  .mobile-toggle{ display:none; background:none; border:none; cursor:pointer; }
-  .mobile-toggle svg{ width:24px; height:24px; }
+Eight services, handled by one friendly team — so you never have to juggle multiple consultants.
+🧾
+ITR Filing
+Accurate, on-time income tax return filing for individuals and businesses.
+📋
+GST Registration & Returns
+Registration, monthly/quarterly returns, and reconciliation, handled end-to-end.
+💳
+TDS Returns
+TDS computation, deduction tracking, and quarterly filing.
+📚
+Bookkeeping & Accounting
+Your books maintained accurately, so your numbers are always current.
+💰
+Payroll Processing
+Salary computation, payslips, and statutory deductions, every month.
+🛡️
+PF & ESI Compliance
+Registration, contributions, and filings for provident fund and ESI.
+🏢
+Company Incorporation
+End-to-end setup for companies, LLPs, and partnerships.
+📈
+Financial Consulting
+Guidance on cash flow, funding, and structuring as you grow.
+Getting started is easy
 
-  /* ---------- Hero ---------- */
-  .hero{ padding:76px 0 88px; position:relative; overflow:hidden; }
-  .hero::before{
-    content:'';
-    position:absolute;
-    top:-120px; right:-120px;
-    width:420px; height:420px;
-    background:var(--yellow);
-    opacity:0.25;
-    border-radius:50%;
-    z-index:0;
-  }
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1.25fr 1fr;
-    gap:56px;
-    align-items:center;
-    position:relative;
-    z-index:1;
-  }
-  .hero .badge{ margin-bottom:22px; }
-  h1{
-    font-family:var(--display);
-    font-size:clamp(36px, 4.8vw, 54px);
-    font-weight:700;
-    line-height:1.14;
-    color:var(--ink);
-  }
-  h1 .highlight{ color:var(--coral); }
-  .hero-sub{ margin-top:20px; font-size:17.5px; color:var(--ink-soft); max-width:480px; }
-  .hero-actions{ margin-top:32px; display:flex; gap:14px; flex-wrap:wrap; }
-  .btn-primary{
-    background:var(--coral);
-    color:var(--white);
-    padding:16px 30px;
-    border-radius:100px;
-    font-size:15px;
-    font-weight:700;
-    box-shadow:0 6px 20px rgba(255,107,74,0.35);
-  }
-  .btn-primary:hover{ background:var(--coral-deep); transform:translateY(-1px); }
-  .btn-whatsapp{
-    background:#25D366;
-    color:var(--white);
-    padding:16px 26px;
-    border-radius:100px;
-    font-size:15px;
-    font-weight:700;
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    box-shadow:0 6px 20px rgba(37,211,102,0.35);
-  }
-  .btn-whatsapp:hover{ background:#1FB855; }
-  .trust-row{ margin-top:32px; display:flex; gap:28px; flex-wrap:wrap; }
-  .trust-item{ font-size:13.5px; color:var(--ink-soft); font-weight:600; display:flex; align-items:center; gap:6px;}
-  .trust-item::before{ content:'⭐'; }
+Four simple steps, and you're off the compliance treadmill.
+1
+Reach out
+Call, WhatsApp, or fill the form below.
+2
+Free consultation
+We understand your needs, no charge.
+3
+We take over
+Filings, books, and payroll — handled.
+4
+Stay updated
+Simple updates, no jargon, ever.
+Ready to stop worrying about deadlines?
+Book a free consultation today — no commitment, just clarity on where you stand.
+Book Free Consultation
+Raviteja Financial Services took over our GST filings and payroll within a month — we haven't missed a deadline since, and finally understand our own numbers.
+Happy Client — Manufacturing SME, Hyderabad
+100%
+On-time
+filings
+Let's talk — it's free
+Let's sort your taxes, together.
+Reach out any way that's easiest — we usually reply within a couple of hours.
+📞
++91 93913 08157
+💬
+Chat on WhatsApp
+✉️
+ravitejagorjirla@gmail.com
+FULL NAME
 
-  .hero-card{
-    background:var(--white);
-    border-radius:24px;
-    padding:32px;
-    box-shadow:0 20px 60px rgba(45,42,38,0.1);
-    position:relative;
-  }
-  .hero-card-title{ font-family:var(--display); font-size:17px; font-weight:700; margin-bottom:20px; }
-  .hero-row{
-    display:flex; align-items:center; gap:14px;
-    padding:12px 0; border-bottom:1px solid var(--bg-alt);
-    font-size:14.5px;
-  }
-  .hero-row:last-child{ border-bottom:none; }
-  .hero-row .dot{ width:10px; height:10px; border-radius:50%; background:var(--teal); flex-shrink:0; }
-  .hero-row b{ color:var(--ink); }
+EMAIL
 
-  /* ---------- Sections ---------- */
-  .section{ padding:80px 0; }
-  .section-alt{ background:var(--white); }
-  .section-head{ text-align:center; max-width:600px; margin:0 auto 48px; }
-  .section-head h2{
-    font-family:var(--display);
-    font-size:clamp(28px, 3.4vw, 38px);
-    font-weight:700;
-    margin-bottom:12px;
-  }
-  .section-head p{ color:var(--ink-soft); font-size:16px; }
-
-  /* ---------- Services ---------- */
-  .services-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:20px;
-  }
-  .service-card{
-    background:var(--white);
-    border-radius:18px;
-    padding:28px 24px;
-    box-shadow:0 6px 20px rgba(45,42,38,0.06);
-    border:1px solid var(--line);
-    transition:transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .service-card:hover{ transform:translateY(-4px); box-shadow:0 14px 34px rgba(45,42,38,0.12); }
-  .service-icon{
-    width:48px; height:48px;
-    border-radius:12px;
-    display:flex; align-items:center; justify-content:center;
-    font-size:22px;
-    margin-bottom:16px;
-  }
-  .icon-1{ background:#FFE4DC; }
-  .icon-2{ background:#DFF3F1; }
-  .icon-3{ background:#FFF1D6; }
-  .icon-4{ background:#E4F5E0; }
-  .icon-5{ background:#E8E4FA; }
-  .icon-6{ background:#FFE4DC; }
-  .icon-7{ background:#DFF3F1; }
-  .icon-8{ background:#FFF1D6; }
-  .service-card h3{ font-family:var(--display); font-size:17px; font-weight:600; margin-bottom:8px; }
-  .service-card p{ color:var(--ink-soft); font-size:14px; }
-
-  /* ---------- Process ---------- */
-  .process{ display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; }
-  .process-step{
-    background:var(--bg);
-    border:2px dashed var(--line);
-    border-radius:18px;
-    padding:26px 22px;
-    text-align:center;
-  }
-  .process-step .num{
-    width:36px; height:36px;
-    background:var(--coral);
-    color:#fff;
-    border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    font-family:var(--display); font-weight:700; font-size:15px;
-    margin:0 auto 14px;
-  }
-  .process-step h4{ font-family:var(--display); font-size:17px; font-weight:600; margin-bottom:8px; }
-  .process-step p{ font-size:13.5px; color:var(--ink-soft); }
-
-  /* ---------- Mid CTA banner ---------- */
-  .mid-cta{
-    background:linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 100%);
-    border-radius:28px;
-    padding:52px 48px;
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:32px;
-    flex-wrap:wrap;
-  }
-  .mid-cta h3{ font-family:var(--display); font-size:26px; font-weight:700; margin-bottom:8px; }
-  .mid-cta p{ color:#D5EFEC; font-size:15px; max-width:420px; }
-  .mid-cta .btn-primary{ background:var(--yellow); color:var(--ink); box-shadow:0 6px 20px rgba(0,0,0,0.15); flex-shrink:0; }
-  .mid-cta .btn-primary:hover{ background:#FFD97A; }
-
-  /* ---------- Stat ---------- */
-  .stat-banner{
-    display:flex; justify-content:center; margin-top:56px;
-  }
-  .stat-pill{
-    background:var(--white);
-    border:2px solid var(--yellow);
-    border-radius:100px;
-    padding:16px 36px;
-    display:flex; align-items:center; gap:14px;
-    box-shadow:0 8px 24px rgba(45,42,38,0.08);
-  }
-  .stat-pill b{ font-family:var(--display); font-size:26px; color:var(--coral); }
-  .stat-pill span{ font-size:13.5px; color:var(--ink-soft); font-weight:600; }
-
-  /* ---------- Testimonial ---------- */
-  .testimonial{
-    background:var(--white);
-    border-radius:24px;
-    padding:44px;
-    max-width:760px;
-    margin:0 auto;
-    box-shadow:0 10px 34px rgba(45,42,38,0.08);
-    position:relative;
-  }
-  .testimonial::before{
-    content:'"';
-    font-family:var(--display);
-    font-size:80px;
-    color:var(--yellow);
-    position:absolute;
-    top:0; left:24px;
-    line-height:1;
-  }
-  .testimonial p{ font-size:19px; line-height:1.55; color:var(--ink); margin:24px 0 20px; font-weight:500; }
-  .testimonial-who{ font-size:14px; color:var(--ink-soft); font-weight:600; }
-  .testimonial-who b{ color:var(--coral-deep); }
-
-  /* ---------- CTA / contact ---------- */
-  .cta-section{ background:var(--ink); color:var(--white); padding:80px 0; }
-  .cta-grid{ display:grid; grid-template-columns:1fr 1fr; gap:48px; }
-  .cta-grid h2{ font-family:var(--display); font-size:clamp(28px,3.4vw,38px); font-weight:700; margin-bottom:16px; }
-  .cta-grid > div:first-child p{ color:#C9C2B8; font-size:15.5px; max-width:400px; margin-bottom:26px; }
-  .quick-contact{ display:flex; flex-direction:column; gap:14px; margin-top:24px; }
-  .quick-contact a{
-    display:flex; align-items:center; gap:14px;
-    background:#3A362F;
-    padding:16px 20px;
-    border-radius:14px;
-    font-size:15px;
-    font-weight:600;
-  }
-  .quick-contact a:hover{ background:#454037; }
-  .quick-contact .icon{ font-size:20px; }
-
-  form{ display:flex; flex-direction:column; gap:14px; }
-  .field{ display:flex; flex-direction:column; gap:6px; }
-  .field label{ font-size:12.5px; color:#C9C2B8; font-weight:600; letter-spacing:0.02em; }
-  .field input, .field select, .field textarea{
-    background:#3A362F;
-    border:1px solid #4A453C;
-    color:var(--white);
-    padding:13px 16px;
-    border-radius:12px;
-    font-family:var(--body);
-    font-size:14.5px;
-  }
-  .field textarea{ resize:vertical; min-height:80px; }
-  .field input:focus, .field select:focus, .field textarea:focus{ outline:2px solid var(--coral); outline-offset:1px; }
-  .form-submit{
-    background:var(--coral);
-    color:var(--white);
-    border:none;
-    padding:16px 24px;
-    border-radius:100px;
-    font-size:15px;
-    font-weight:700;
-    cursor:pointer;
-    margin-top:6px;
-    box-shadow:0 6px 20px rgba(255,107,74,0.3);
-  }
-  .form-submit:hover{ background:var(--coral-deep); }
-
-  /* ---------- Floating WhatsApp button ---------- */
-  .floating-wa{
-    position:fixed;
-    bottom:24px; right:24px;
-    background:#25D366;
-    color:#fff;
-    width:60px; height:60px;
-    border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    font-size:28px;
-    box-shadow:0 8px 24px rgba(37,211,102,0.5);
-    z-index:200;
-    animation:pulse 2.4s infinite;
-  }
-  @keyframes pulse{
-    0%{ box-shadow:0 0 0 0 rgba(37,211,102,0.5); }
-    70%{ box-shadow:0 0 0 14px rgba(37,211,102,0); }
-    100%{ box-shadow:0 0 0 0 rgba(37,211,102,0); }
-  }
-
-  /* ---------- Footer ---------- */
-  footer{ padding:36px 0; background:var(--ink); color:#C9C2B8; }
-  .footer-grid{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; padding-bottom:24px; }
-  .footer-grid .logo{ color:#fff; }
-  .footer-links{ display:flex; gap:26px; font-size:13.5px; }
-  .footer-links a:hover{ color:#fff; }
-  .disclaimer{ font-size:12px; color:#8A8478; border-top:1px solid #3A362F; padding-top:22px; line-height:1.7; }
-
-  @media (max-width:860px){
-    .nav-links{ display:none; }
-    .mobile-toggle{ display:block; }
-    .hero-grid{ grid-template-columns:1fr; }
-    .services-grid{ grid-template-columns:1fr 1fr; }
-    .process{ grid-template-columns:1fr 1fr; }
-    .cta-grid{ grid-template-columns:1fr; }
-    .mid-cta{ flex-direction:column; text-align:center; }
-    .section{ padding:60px 0; }
-  }
-  @media (max-width:520px){
-    .wrap{ padding:0 20px; }
-    .nav{ padding:16px 20px; }
-    .services-grid{ grid-template-columns:1fr; }
-    .process{ grid-template-columns:1fr; }
-    .mid-cta{ padding:36px 28px; }
-    .testimonial{ padding:32px 24px; }
-  }
-</style>
-</head>
-<body>
-
-<div class="topbar">📞 Call us now at <a href="tel:+919391308157">+91 93913 08157</a> — free first consultation for new clients</div>
-
-<header>
-  <div class="nav">
-    <div class="logo">Raviteja <span>Financial</span></div>
-    <nav class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#process">How it works</a>
-      <a href="tel:+919391308157" class="nav-phone">📞 93913 08157</a>
-      <a href="#contact" class="nav-cta">Get Free Consultation</a>
-    </nav>
-    <button class="mobile-toggle" aria-label="Menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="badge">Trusted by businesses across Hyderabad</span>
-      <h1>Taxes, GST &amp; payroll —<br><span class="highlight">sorted, stress-free.</span></h1>
-      <p class="hero-sub">Raviteja Financial Services takes the paperwork off your plate — ITR, GST, TDS, payroll, and more — so you can focus on running your business.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get Free Consultation →</a>
-        <a href="https://wa.me/919391308157" class="btn-whatsapp">💬 Chat on WhatsApp</a>
-      </div>
-      <div class="trust-row">
-        <span class="trust-item">100% on-time filings</span>
-        <span class="trust-item">8 services under one roof</span>
-        <span class="trust-item">Replies within hours</span>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="hero-card-title">This month's filing status</div>
-      <div class="hero-row"><span class="dot"></span><span>GST Return — <b>Filed early</b></span></div>
-      <div class="hero-row"><span class="dot"></span><span>TDS Return — <b>On track</b></span></div>
-      <div class="hero-row"><span class="dot"></span><span>Payroll Run — <b>Completed</b></span></div>
-      <div class="hero-row"><span class="dot"></span><span>PF/ESI Filing — <b>Scheduled</b></span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt" id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Everything your business needs</h2>
-      <p>Eight services, handled by one friendly team — so you never have to juggle multiple consultants.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon icon-1">🧾</div>
-        <h3>ITR Filing</h3>
-        <p>Accurate, on-time income tax return filing for individuals and businesses.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon icon-2">📋</div>
-        <h3>GST Registration &amp; Returns</h3>
-        <p>Registration, monthly/quarterly returns, and reconciliation, handled end-to-end.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon icon-3">💳</div>
-        <h3>TDS Returns</h3>
-        <p>TDS computation, deduction tracking, and quarterly filing.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon icon-4">📚</div>
-        <h3>Bookkeeping &amp; Accounting</h3>
-        <p>Your books maintained accurately, so your numbers are always current.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon icon-5">💰</div>
-        <h3>Payroll Processing</h3>
-        <p>Salary computation, payslips, and statutory deductions, every month.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon icon-6">🛡️</div>
-        <h3>PF &amp; ESI Compliance</h3>
-        <p>Registration, contributions, and filings for provident fund and ESI.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon icon-7">🏢</div>
-        <h3>Company Incorporation</h3>
-        <p>End-to-end setup for companies, LLPs, and partnerships.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon icon-8">📈</div>
-        <h3>Financial Consulting</h3>
-        <p>Guidance on cash flow, funding, and structuring as you grow.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="process">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Getting started is easy</h2>
-      <p>Four simple steps, and you're off the compliance treadmill.</p>
-    </div>
-    <div class="process">
-      <div class="process-step">
-        <div class="num">1</div>
-        <h4>Reach out</h4>
-        <p>Call, WhatsApp, or fill the form below.</p>
-      </div>
-      <div class="process-step">
-        <div class="num">2</div>
-        <h4>Free consultation</h4>
-        <p>We understand your needs, no charge.</p>
-      </div>
-      <div class="process-step">
-        <div class="num">3</div>
-        <h4>We take over</h4>
-        <p>Filings, books, and payroll — handled.</p>
-      </div>
-      <div class="process-step">
-        <div class="num">4</div>
-        <h4>Stay updated</h4>
-        <p>Simple updates, no jargon, ever.</p>
-      </div>
-    </div>
-
-    <div class="mid-cta" style="margin-top:56px;">
-      <div>
-        <h3>Ready to stop worrying about deadlines?</h3>
-        <p>Book a free consultation today — no commitment, just clarity on where you stand.</p>
-      </div>
-      <a href="#contact" class="btn-primary">Book Free Consultation</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="testimonial">
-      <p>Raviteja Financial Services took over our GST filings and payroll within a month — we haven't missed a deadline since, and finally understand our own numbers.</p>
-      <div class="testimonial-who"><b>Happy Client</b> — Manufacturing SME, Hyderabad</div>
-    </div>
-    <div class="stat-banner">
-      <div class="stat-pill">
-        <b>100%</b>
-        <span>On-time<br>filings</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section" id="contact">
-  <div class="wrap cta-grid">
-    <div>
-      <span class="badge" style="background:#3A362F;color:var(--yellow);">Let's talk — it's free</span>
-      <h2 style="margin-top:18px;">Let's sort your taxes, together.</h2>
-      <p>Reach out any way that's easiest — we usually reply within a couple of hours.</p>
-      <div class="quick-contact">
-        <a href="tel:+919391308157"><span class="icon">📞</span> +91 93913 08157</a>
-        <a href="https://wa.me/919391308157"><span class="icon">💬</span> Chat on WhatsApp</a>
-        <a href="mailto:ravitejagorjirla@gmail.com"><span class="icon">✉️</span> ravitejagorjirla@gmail.com</a>
-      </div>
-    </div>
-    <form onsubmit="event.preventDefault(); this.reset(); alert('Thanks — we will get back to you within a couple of hours!');">
-      <div class="field">
-        <label for="name">FULL NAME</label>
-        <input id="name" type="text" required placeholder="Your name">
-      </div>
-      <div class="field">
-        <label for="email">EMAIL</label>
-        <input id="email" type="email" required placeholder="you@company.com">
-      </div>
-      <div class="field">
-        <label for="service">SERVICE NEEDED</label>
-        <select id="service">
-          <option>Income Tax Return (ITR) Filing</option>
-          <option>GST Registration &amp; GST Returns</option>
-          <option>TDS Returns</option>
-          <option>Bookkeeping &amp; Accounting</option>
-          <option>Payroll Processing</option>
-          <option>PF &amp; ESI Compliance</option>
-          <option>Company Incorporation</option>
-          <option>Financial Consulting</option>
-          <option>Not sure yet</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="msg">MESSAGE</label>
-        <textarea id="msg" placeholder="A little about your business or query"></textarea>
-      </div>
-      <button type="submit" class="form-submit">Get My Free Consultation →</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="logo">Raviteja <span style="color:var(--coral);">Financial</span></div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#process">How it works</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-    <p class="disclaimer">Raviteja Financial Services provides tax, GST compliance, payroll, and financial advisory services. Information on this site is for general guidance only and does not constitute individual financial or legal advice. Engagement terms, fees, and applicable regulations are confirmed directly with clients before any work begins. © 2026 Raviteja Financial Services. All rights reserved.</p>
-  </div>
-</footer>
-
-<a href="https://wa.me/919391308157" class="floating-wa" aria-label="Chat on WhatsApp">💬</a>
-
-</body>
-</html>
+SERVICE NEEDED
+          Income Tax Return (ITR) Filing
+          GST Registration & GST Returns
+          TDS Returns
+          Bookkeeping & Accounting
+          Payroll Processing
+          PF & ESI Compliance
+          Company Incorporation
+          Financial Consulting
+          Not sure yet
+        
+MESSAGE
+Get My Free Consultation →
+Raviteja Financial
+Services
+How it works
+Contact
+Raviteja Financial Services provides tax, GST compliance, payroll, and financial advisory services. Information on this site is for general guidance only and does not constitute individual financial or legal advice. Engagement terms, fees, and applicable regulations are confirmed directly with clients before any work begins. © 2026 Raviteja Financial Services. All rights reserved.
+💬
